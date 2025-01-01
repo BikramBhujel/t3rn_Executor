@@ -25,19 +25,30 @@ Move into the executor binary directory:
 
 cd executor/executor/bin  
 
-Setting Environment Variables
+Step 4: Setting Environment Variables
 Required Variables
-Set up the necessary environment variables to configure the executor:
+Set up the necessary environment variables to configure the executor: Enter Below command one by one
 
 export NODE_ENV=testnet  
+
 export LOG_LEVEL=debug  
-export LOG_PRETTY=false  
+export LOG_PRETTY=false
+
 export EXECUTOR_PROCESS_ORDERS=true  
 export EXECUTOR_PROCESS_CLAIMS=true  
-export EXECUTOR_MAX_L3_GAS_PRICE=1000  
-export PRIVATE_KEY_LOCAL=Your_Private_Key  
-export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn'  
 
+export EXECUTOR_MAX_L3_GAS_PRICE=1000  (You can reduce the Gas Price to 50 if you want)
+
+export PRIVATE_KEY_LOCAL=Your_Private_Key  
+
+export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn'  (If you want the executor to handle only specific networks, update the ENABLED_NETWORKS variable. For example, to run the executor for Base and Optimism Sepolia: export ENABLED_NETWORKS='base-sepolia,optimism-sepolia,l1rn')
+
+export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false  
+
+Step 5: ./executor  (Once all configurations are complete, execute the following command to start the executor)
+
+Completed, - Below are optional step if you want to customize executor
+_________________________________________________________________________________________________________________________________________________________________________________________
 
 Optional: Running Specific Networks
 If you want the executor to handle only specific networks, update the ENABLED_NETWORKS variable. For example, to run the executor for Base and Optimism Sepolia:
@@ -77,9 +88,9 @@ Once all configurations are complete, execute the following command to start the
 
 
 Notes
-Ensure all environment variables are set correctly before running the executor.
-For private keys and sensitive information, use secure storage mechanisms to avoid accidental exposure.
-If you encounter issues, double-check the network and RPC configurations.
+1.  Ensure all environment variables are set correctly before running the executor.
+2.  For private keys and sensitive information, use secure storage mechanisms to avoid accidental exposure.
+3.  If you encounter issues, double-check the network and RPC configurations.
 
 
 

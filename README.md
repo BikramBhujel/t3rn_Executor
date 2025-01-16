@@ -30,5 +30,10 @@ Use our APIs to bridge assets efficiently.
 Join the Executor program to contribute liquidity and earn rewards.
 For detailed guides and tutorials,
 
+Download the latest executor release using the wget command:
 
+<pre>
+  <code id="code-block">wget https://github.com/t3rn/executor-release/releases/download/v0.34.0/executor-linux-v0.34.0.tar.gz </code>
+  <button onclick="copyCode()">Copy</button>
+</pre>
 

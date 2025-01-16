@@ -53,7 +53,6 @@ Download the latest executor release using the wget command:
 
 <pre>
   <code id="code-block">wget https://github.com/t3rn/executor-release/releases/download/v0.34.0/executor-linux-v0.34.0.tar.gz </code>
-  
 </pre>
 
 
@@ -84,26 +83,26 @@ Set up the necessary environment variables to configure the executor: Enter Belo
 
  
 <pre>
-  <code id="code-block">export NODE_ENV=testnet  </code>
+<code id="code-block">export NODE_ENV=testnet  </code>
   
 </pre>
 
 <pre>
-  <code id="code-block">export LOG_LEVEL=debug  
+<code id="code-block">export LOG_LEVEL=debug  
 export LOG_PRETTY=false </code>
   
 </pre>
 
 
 <pre>
-  <code id="code-block">export EXECUTOR_PROCESS_ORDERS=true  
+<code id="code-block">export EXECUTOR_PROCESS_ORDERS=true  
 export EXECUTOR_PROCESS_CLAIMS=true</code>
   
 </pre>
 
    
 <pre>
-  <code id="code-block">export EXECUTOR_MAX_L3_GAS_PRICE=1000 </code>
+<code id="code-block">export EXECUTOR_MAX_L3_GAS_PRICE=1000 </code>
   
 </pre>
 
@@ -111,7 +110,7 @@ export EXECUTOR_MAX_L3_GAS_PRICE=1000  (You can reduce the Gas Price to 50 if yo
 
 
 <pre>
-  <code id="code-block">export PRIVATE_KEY_LOCAL=Your_Private_Key</code>
+<code id="code-block">export PRIVATE_KEY_LOCAL=Your_Private_Key</code>
   
 </pre>
 
@@ -120,13 +119,13 @@ export EXECUTOR_MAX_L3_GAS_PRICE=1000  (You can reduce the Gas Price to 50 if yo
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn'  (If you want the executor to handle only specific networks, update the ENABLED_NETWORKS variable. For example, to run the executor for Base and Optimism Sepolia: export ENABLED_NETWORKS='base-sepolia,optimism-sepolia,l1rn')
 
 <pre>
-  <code id="code-block">export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false</code>
+<code id="code-block">export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false</code>
   
 </pre>
 
 Step 5: ./executor  (Once all configurations are complete, execute the following command to start the executor)
 <pre>
-  <code id="code-block">./executor</code>
+<code id="code-block">./executor</code>
   
 </pre>
  
@@ -137,7 +136,7 @@ ________________________________________________________________________________
 Optional: Running Specific Networks
 If you want the executor to handle only specific networks, update the ENABLED_NETWORKS variable. For example, to run the executor for Base and Optimism Sepolia:
 
-export ENABLED_NETWORKS='base-sepolia,optimism-sepolia,l1rn'  
+<pre>export ENABLED_NETWORKS='base-sepolia,optimism-sepolia,l1rn'  </pre>
 
 _________________________________________________________________________________________________________________________________________________________________________________________
 Configuring Custom RPC Endpoints
@@ -147,7 +146,7 @@ Adding Custom RPC URLs
 Replace NETWORK_NAME with the appropriate network identifier and specify the URLs: export RPC_ENDPOINTS_${NETWORK_NAME}='https://url1.io,https://url2.io'  
 
 Example for Arbitrum Sepolia:
-export RPC_ENDPOINTS_ARBT='https://arb-sepolia.g.alchemy.com/v2/your_id,https://url2.io'  
+<pre>export RPC_ENDPOINTS_ARBT='https://arb-sepolia.g.alchemy.com/v2/your_id,https://url2.io'  </pre>
 
 Supported Network Names:
 arbt: Arbitrum Sepolia
@@ -156,10 +155,10 @@ blss: Blast Sepolia
 opsp: Optimism Sepolia
 Example for Supported Networks
 
-export RPC_ENDPOINTS_BSSP='https://base-sepolia.g.alchemy.com/v2/your_id'  
+<pre>export RPC_ENDPOINTS_BSSP='https://base-sepolia.g.alchemy.com/v2/your_id'  
 export RPC_ENDPOINTS_BLSS='https://blast-sepolia.g.alchemy.com/v2/your_id'  
 export RPC_ENDPOINTS_OPSP='https://opt-sepolia.g.alchemy.com/v2/your_id'  
-export RPC_ENDPOINTS_ARBT='https://arb-sepolia.g.alchemy.com/v2/your_id'  
+export RPC_ENDPOINTS_ARBT='https://arb-sepolia.g.alchemy.com/v2/your_id'  </pre>
 _________________________________________________________________________________________________________________________________________________________________________________________
 
 export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false  
@@ -167,7 +166,7 @@ export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
 Running the Executor
 Once all configurations are complete, execute the following command to start the executor:
 
-./executor  
+<pre>./executor  </pre>
 
 
 

@@ -35,7 +35,7 @@ For detailed guides and tutorials,
 Download the latest executor release using the wget command:
 
 <pre>
-  <code id="code-block">wget https://github.com/t3rn/executor-release/releases/download/v0.34.0/executor-linux-v0.34.0.tar.gz </code>
+  <code id="code-block">wget https://github.com/t3rn/executor-release/releases/download/v0.35.0/executor-linux-v0.35.0.tar.gz </code>
 </pre>
 
 The t3rn executor is a critical component of the t3rn platform, enabling seamless execution of cross-chain smart contracts. This guide walks you through the step-by-step configuration and commands required to set up and run the executor effectively.

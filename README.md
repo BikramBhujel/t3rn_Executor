@@ -100,7 +100,7 @@ export EXECUTOR_MAX_L3_GAS_PRICE=1000  (You can reduce the Gas Price to 50 if yo
 <code id="code-block">export PRIVATE_KEY_LOCAL=Your_Private_Key</code>  
 </pre>
 
-<pre>export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn'</pre>  (If you want the executor to handle only specific networks, update the ENABLED_NETWORKS variable. For example, to run the executor for Base and Optimism Sepolia: export ENABLED_NETWORKS='base-sepolia,optimism-sepolia,l1rn')
+<pre><code id="code-block">export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn'</code></pre>  (If you want the executor to handle only specific networks, update the ENABLED_NETWORKS variable. For example, to run the executor for Base and Optimism Sepolia: export ENABLED_NETWORKS='base-sepolia,optimism-sepolia,l1rn')
 
 <pre>
 <code id="code-block">export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false</code> 

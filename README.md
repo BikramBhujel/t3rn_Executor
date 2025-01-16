@@ -34,7 +34,6 @@ Download the latest executor release using the wget command:
 
 <pre>
   <code id="code-block">wget https://github.com/t3rn/executor-release/releases/download/v0.34.0/executor-linux-v0.34.0.tar.gz </code>
-  <button onclick="copyCode()">Copy</button>
 </pre>
 
 The t3rn executor is a critical component of the t3rn platform, enabling seamless execution of cross-chain smart contracts. This guide walks you through the step-by-step configuration and commands required to set up and run the executor effectively.
@@ -54,7 +53,7 @@ Download the latest executor release using the wget command:
 
 <pre>
   <code id="code-block">wget https://github.com/t3rn/executor-release/releases/download/v0.34.0/executor-linux-v0.34.0.tar.gz </code>
-  <button onclick="copyCode()">Copy</button>
+  
 </pre>
 
 
@@ -65,7 +64,7 @@ tar -xvzf executor-linux-v0.34.0.tar.gz
 
 <pre>
   <code id="code-block">tar -xvzf executor-linux-v0.34.0.tar.gz </code>
-  <button onclick="copyCode()">Copy</button>
+  
 </pre>
 
 
@@ -76,7 +75,7 @@ cd executor/executor/bin
 
 <pre>
   <code id="code-block">cd executor/executor/bin </code>
-  <button onclick="copyCode()">Copy</button>
+  
 </pre>
 
 Step 4: Setting Environment Variables
@@ -86,26 +85,26 @@ Set up the necessary environment variables to configure the executor: Enter Belo
  
 <pre>
   <code id="code-block">export NODE_ENV=testnet  </code>
-  <button onclick="copyCode()">Copy</button>
+  
 </pre>
 
 <pre>
   <code id="code-block">export LOG_LEVEL=debug  
 export LOG_PRETTY=false </code>
-  <button onclick="copyCode()">Copy</button>
+  
 </pre>
 
 
 <pre>
   <code id="code-block">export EXECUTOR_PROCESS_ORDERS=true  
 export EXECUTOR_PROCESS_CLAIMS=true</code>
-  <button onclick="copyCode()">Copy</button>
+  
 </pre>
 
    
 <pre>
   <code id="code-block">export EXECUTOR_MAX_L3_GAS_PRICE=1000 </code>
-  <button onclick="copyCode()">Copy</button>
+  
 </pre>
 
 export EXECUTOR_MAX_L3_GAS_PRICE=1000  (You can reduce the Gas Price to 50 if you want)
@@ -113,7 +112,7 @@ export EXECUTOR_MAX_L3_GAS_PRICE=1000  (You can reduce the Gas Price to 50 if yo
 
 <pre>
   <code id="code-block">export PRIVATE_KEY_LOCAL=Your_Private_Key</code>
-  <button onclick="copyCode()">Copy</button>
+  
 </pre>
 
  
@@ -122,13 +121,13 @@ export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn'  (
 
 <pre>
   <code id="code-block">export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false</code>
-  <button onclick="copyCode()">Copy</button>
+  
 </pre>
 
 Step 5: ./executor  (Once all configurations are complete, execute the following command to start the executor)
 <pre>
   <code id="code-block">./executor</code>
-  <button onclick="copyCode()">Copy</button>
+  
 </pre>
  
 

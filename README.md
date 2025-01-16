@@ -52,39 +52,85 @@ Step 1: Download the Executor Package
 
 Download the latest executor release using the wget command:
 
-wget https://github.com/t3rn/executor-release/releases/download/v0.34.0/executor-linux-v0.34.0.tar.gz 
+<pre>
+  <code id="code-block">wget https://github.com/t3rn/executor-release/releases/download/v0.34.0/executor-linux-v0.34.0.tar.gz </code>
+  <button onclick="copyCode()">Copy</button>
+</pre>
+
 
 Step 2: Extract the Package
 Unpack the downloaded tarball file:
 
 tar -xvzf executor-linux-v0.34.0.tar.gz  
 
+<pre>
+  <code id="code-block">tar -xvzf executor-linux-v0.34.0.tar.gz </code>
+  <button onclick="copyCode()">Copy</button>
+</pre>
+
+
 Step 3: Navigate to the Executor Directory
 Move into the executor binary directory:
 
 cd executor/executor/bin  
 
+<pre>
+  <code id="code-block">cd executor/executor/bin </code>
+  <button onclick="copyCode()">Copy</button>
+</pre>
+
 Step 4: Setting Environment Variables
 Required Variables
 Set up the necessary environment variables to configure the executor: Enter Below command one by one
 
-export NODE_ENV=testnet  
+ 
+<pre>
+  <code id="code-block">export NODE_ENV=testnet  </code>
+  <button onclick="copyCode()">Copy</button>
+</pre>
 
-export LOG_LEVEL=debug  
-export LOG_PRETTY=false
+<pre>
+  <code id="code-block">export LOG_LEVEL=debug  
+export LOG_PRETTY=false </code>
+  <button onclick="copyCode()">Copy</button>
+</pre>
 
-export EXECUTOR_PROCESS_ORDERS=true  
-export EXECUTOR_PROCESS_CLAIMS=true  
+
+<pre>
+  <code id="code-block">export EXECUTOR_PROCESS_ORDERS=true  
+export EXECUTOR_PROCESS_CLAIMS=true</code>
+  <button onclick="copyCode()">Copy</button>
+</pre>
+
+   
+<pre>
+  <code id="code-block">export EXECUTOR_MAX_L3_GAS_PRICE=1000 </code>
+  <button onclick="copyCode()">Copy</button>
+</pre>
 
 export EXECUTOR_MAX_L3_GAS_PRICE=1000  (You can reduce the Gas Price to 50 if you want)
 
-export PRIVATE_KEY_LOCAL=Your_Private_Key  
+
+<pre>
+  <code id="code-block">export PRIVATE_KEY_LOCAL=Your_Private_Key</code>
+  <button onclick="copyCode()">Copy</button>
+</pre>
+
+ 
 
 export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn'  (If you want the executor to handle only specific networks, update the ENABLED_NETWORKS variable. For example, to run the executor for Base and Optimism Sepolia: export ENABLED_NETWORKS='base-sepolia,optimism-sepolia,l1rn')
 
-export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false  
+<pre>
+  <code id="code-block">export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false</code>
+  <button onclick="copyCode()">Copy</button>
+</pre>
 
 Step 5: ./executor  (Once all configurations are complete, execute the following command to start the executor)
+<pre>
+  <code id="code-block">./executor</code>
+  <button onclick="copyCode()">Copy</button>
+</pre>
+ 
 
 Completed, - Below are optional step if you want to customize executor
 _________________________________________________________________________________________________________________________________________________________________________________________

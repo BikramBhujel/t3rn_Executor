@@ -51,12 +51,12 @@ Step-by-Step Configuration
 Step 1: Download the Executor Package
 Download the latest executor release using the wget command:
 <pre>
-  <code id="code-block">wget https://github.com/t3rn/executor-release/releases/download/v0.34.0/executor-linux-v0.34.0.tar.gz </code>
+  <code id="code-block">wget https://github.com/t3rn/executor-release/releases/download/v0.34.0/executor-linux-v0.35.0.tar.gz </code>
 </pre>
 Step 2: Extract the Package
 Unpack the downloaded tarball file: 
 <pre>
-  <code id="code-block">tar -xvzf executor-linux-v0.34.0.tar.gz </code>
+  <code id="code-block">tar -xvzf executor-linux-v0.35.0.tar.gz </code>
 </pre>
 
 
@@ -118,7 +118,9 @@ ________________________________________________________________________________
 Optional: Running Specific Networks
 If you want the executor to handle only specific networks, update the ENABLED_NETWORKS variable. For example, to run the executor for Base and Optimism Sepolia:
 
-<pre>export ENABLED_NETWORKS='base-sepolia,optimism-sepolia,l1rn'  </pre>
+<pre>
+<code id="code-block">
+export ENABLED_NETWORKS='base-sepolia,optimism-sepolia,l1rn' </code> </pre>
 
 _________________________________________________________________________________________________________________________________________________________________________________________
 Configuring Custom RPC Endpoints
@@ -128,7 +130,7 @@ Adding Custom RPC URLs
 Replace NETWORK_NAME with the appropriate network identifier and specify the URLs: export RPC_ENDPOINTS_${NETWORK_NAME}='https://url1.io,https://url2.io'  
 
 Example for Arbitrum Sepolia:
-<pre>export RPC_ENDPOINTS_ARBT='https://arb-sepolia.g.alchemy.com/v2/your_id,https://url2.io' </pre>
+<pre><code id="code-block">export RPC_ENDPOINTS_ARBT='https://arb-sepolia.g.alchemy.com/v2/your_id,https://url2.io' </code></pre>
 
 Supported Network Names:
 arbt: Arbitrum Sepolia
@@ -137,18 +139,18 @@ blss: Blast Sepolia
 opsp: Optimism Sepolia
 Example for Supported Networks
 
-<pre>export RPC_ENDPOINTS_BSSP='https://base-sepolia.g.alchemy.com/v2/your_id'  
+<pre><code id="code-block">export RPC_ENDPOINTS_BSSP='https://base-sepolia.g.alchemy.com/v2/your_id'  
 export RPC_ENDPOINTS_BLSS='https://blast-sepolia.g.alchemy.com/v2/your_id'  
 export RPC_ENDPOINTS_OPSP='https://opt-sepolia.g.alchemy.com/v2/your_id'  
-export RPC_ENDPOINTS_ARBT='https://arb-sepolia.g.alchemy.com/v2/your_id'  </pre>
+export RPC_ENDPOINTS_ARBT='https://arb-sepolia.g.alchemy.com/v2/your_id' </code> </pre>
 _________________________________________________________________________________________________________________________________________________________________________________________
 
-<pre>export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false </pre>
+<pre><code id="code-block">export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false </code></pre>
 
 Running the Executor
 Once all configurations are complete, execute the following command to start the executor:
 
-<pre>./executor  </pre>
+<pre><code id="code-block">./executor </code> </pre>
 
 
 

@@ -13,12 +13,12 @@ Step 1: Download the Executor Package
 
 Download the latest executor release using the wget command:
 
-wget https://github.com/t3rn/executor-release/releases/download/v0.34.0/executor-linux-v0.34.0.tar.gz 
+<pre>wget https://github.com/t3rn/executor-release/releases/download/v0.34.0/executor-linux-v0.34.0.tar.gz </pre>
 
 Step 2: Extract the Package
 Unpack the downloaded tarball file:
 
-tar -xvzf executor-linux-v0.34.0.tar.gz  
+<pre>tar -xvzf executor-linux-v0.34.0.tar.gz  </pre>
 
 Step 3: Navigate to the Executor Directory
 Move into the executor binary directory:

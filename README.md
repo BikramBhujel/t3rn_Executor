@@ -85,8 +85,11 @@ export LOG_PRETTY=false </code>
 
 
 <pre>
-<code id="code-block">export EXECUTOR_PROCESS_ORDERS=true  
-export EXECUTOR_PROCESS_CLAIMS=true</code>
+<code id="code-block">
+export EXECUTOR_PROCESS_BIDS_ENABLED=true
+export EXECUTOR_PROCESS_ORDERS_ENABLED=true
+export EXECUTOR_PROCESS_CLAIMS_ENABLED=true
+  </code>
   
 </pre>
    
